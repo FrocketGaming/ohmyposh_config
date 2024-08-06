@@ -125,8 +125,7 @@
           "foreground": "#282A36",
           "style": "plain",
           "template": "<#8BE9FD,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,#8BE9FD>\ue0b2</>",
-          "type": "shell",
-          "overflow": "hidden"
+          "type": "shell"
         },
         {
           "background": "#FF5555",
@@ -145,8 +144,7 @@
           },
           "style": "powerline",
           "template": " {{ if not .Error }}{{ .Icon }}{{ .Percentage }}{{ end }}{{ .Error }}\uf295 ",
-          "type": "battery",
-          "overflow": "hidden"
+          "type": "battery"
         },
         {
           "background": "#BD93F9",
@@ -156,8 +154,7 @@
           "style": "diamond",
           "template": " {{ .CurrentDate | date \"3:04PM\" }} ",
           "trailing_diamond": "\ue0b4",
-          "type": "time",
-          "overflow": "hidden"
+          "type": "time"
         }
       ],
       "type": "rprompt"
