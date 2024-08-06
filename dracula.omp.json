@@ -3,6 +3,7 @@
   "blocks": [
     {
       "alignment": "left",
+      "overflow": "hide",
       "segments": [
         {
           "background": "#BD93F9",
