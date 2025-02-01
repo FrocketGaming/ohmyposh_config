@@ -112,7 +112,7 @@
             "always_enabled": true
           },
           "style": "diamond",
-          "template": "<parentBackground></> \ue23a  \n->",
+          "template": "<parentBackground></> \ue23a ",
           "trailing_diamond": "\ue0b4",
           "type": "status"
         }
