@@ -10,7 +10,7 @@
           "foreground": "#F8F8F2",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": " {{ .UserName }} ",
+          "template": " {{ .UserName }} \n->",
           "trailing_diamond": "\ue0b0",
           "type": "session"
         },
