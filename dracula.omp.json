@@ -120,6 +120,19 @@
       "type": "prompt"
     },
     {
+      "alignment": "left",
+      "segments": [
+        {
+          "foreground": "#BD93F9",
+          "style": "plain",
+          "template": "→ ",
+          "type": "text"
+        }
+      ],
+      "type": "prompt",
+      "newline": true
+    },
+    {
       "segments": [
         {
           "background": "#8BE9FD",
