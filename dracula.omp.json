@@ -3,132 +3,55 @@
   "blocks": [
     {
       "alignment": "left",
-      "overflow": "hide",
       "segments": [
         {
           "background": "#BD93F9",
           "foreground": "#F8F8F2",
           "leading_diamond": "\ue0b6",
           "style": "diamond",
-          "template": " -> ",
+          "template": " {{ .UserName }} ",
           "trailing_diamond": "\ue0b0",
           "type": "session"
         },
         {
           "background": "#FF79C6",
           "foreground": "#F8F8F2",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "folder_separator_icon": " \ue0b1 ",
-            "home_icon": "~",
-            "style": "folder"
-          },
-          "style": "powerline",
-          "template": " -> ",
+          "template": " {{ .Path }} ",
           "type": "path"
         },
         {
           "background": "#F1FA8C",
           "foreground": "#282A36",
-          "leading_diamond": "\ue0b6",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "branch_max_length": 25,
-            "fetch_stash_count": true,
-            "fetch_status": true,
-            "fetch_upstream_icon": true
-          },
-          "style": "powerline",
-          "template": " -> ",
-          "trailing_diamond": "\ue0b4",
+          "template": " {{ .GitBranch }} ",
           "type": "git"
-        },
+        }
+      ]
+    },
+    {
+      "alignment": "left",
+      "segments": [
         {
-          "background": "#50FA7B",
-          "foreground": "#282A36",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "fetch_version": true
-          },
-          "style": "powerline",
-          "template": " -> ",
-          "type": "node"
-        },
-        {
-          "background": "#8BE9FD",
-          "foreground": "#282A36",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "fetch_version": true
-          },
-          "style": "powerline",
-          "template": " -> ",
-          "type": "go"
-        },
-        {
-          "background": "#BD93F9",
+          "background": "#282A36",
           "foreground": "#F8F8F2",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "fetch_version": true
-          },
-          "style": "powerline",
-          "template": " -> ",
-          "type": "julia"
-        },
-        {
-          "background": "#FFB86C",
-          "foreground": "#282A36",
-          "powerline_symbol": "\ue0b0",
-          "properties": {
-            "display_mode": "files",
-            "fetch_virtual_env": false
-          },
-          "style": "powerline",
-          "template": " -> ",
-          "type": "python"
-        },
-        {
-          "background": "#F1FA8C",
-          "foreground": "#282A36",
-          "powerline_symbol": "\ue0b0",
-          "style": "powerline",
-          "template": " -> ",
-          "type": "root"
-        },
-        {
-          "background": "#50FA7B",
-          "foreground": "#282A36",
-          "template": " -> ",
-          "type": "status"
+          "style": "plain",
+          "template": "\ue0b6 \ue0b0 ",  // Static pills at the top
+          "type": "static_pills"
         }
       ],
       "type": "prompt"
     },
     {
+      "alignment": "left",
       "segments": [
         {
-          "background": "#8BE9FD",
-          "foreground": "#282A36",
+          "background": "#282A36",
+          "foreground": "#F8F8F2",
           "style": "plain",
-          "template": " -> ",
+          "template": "-> ",
           "type": "shell"
-        },
-        {
-          "background": "#BD93F9",
-          "foreground": "#282A36",
-          "invert_powerline": true,
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": " -> ",
-          "trailing_diamond": "\ue0b4",
-          "type": "time"
         }
       ],
       "type": "rprompt"
     }
-  ],
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
-  "final_space": true,
-  "version": 2
+  ]
 }
