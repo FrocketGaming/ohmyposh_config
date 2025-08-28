@@ -121,30 +121,6 @@
     },
     {
       "type": "prompt",
-      "alignment": "right",
-      "newline": false,
-      "segments": [
-        {
-          "background": "#8BE9FD",
-          "foreground": "#282A36",
-          "style": "plain",
-          "template": "<#8BE9FD,transparent>\ue0b6</> \uf489 {{ .Name }} <transparent,#8BE9FD>\ue0b2</>",
-          "type": "shell"
-        },
-        {
-          "background": "#BD93F9",
-          "foreground": "#282A36",
-          "invert_powerline": true,
-          "leading_diamond": "\ue0b2",
-          "style": "diamond",
-          "template": " {{ .CurrentDate | date \"3:04PM\" }} ",
-          "trailing_diamond": "\ue0b4",
-          "type": "time"
-        }
-      ]
-    },
-    {
-      "type": "prompt",
       "alignment": "left",
       "newline": true,
       "segments": [
